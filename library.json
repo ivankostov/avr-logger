@@ -1,0 +1,17 @@
+{
+  "name": "avr-logger",
+  "keywords": "logging, testing, test driven development",
+  "description": "Flexible logger for Arduino",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/ivankostov/avr-logger"
+  },
+  "authors":
+  {
+    "name": "Ivan Kostov",
+    "url": "http://www.ivan-kostov.net"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr"  
+}
