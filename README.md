@@ -20,14 +20,14 @@ The AVR Logger provides solution to those problems. It:
 
 The AVR Logger support a semantic similar to the <i>printf()</i>.
 
-- %%s - print a normal string
-- %%F or %%f - print flash ( progmem ) string
-- %%d or %%i - print signed int
-- %%u - print unsigned int.
-- %%l - long modificator. Can be used as %%ld, %%li, %%lu. 
-- %%X or %%x - print hex int
-- %%b - print binary representation of an integer.
-- %%c - prints single character
+- %s - print a normal string
+- %F or %f - print flash ( progmem ) string
+- %d or %i - print signed int
+- %u - print unsigned int.
+- %l - long modificator. Can be used as %%ld, %%li, %%lu. 
+- %X or %x - print hex int
+- %b - print binary representation of an integer.
+- %c - prints single character
 
 The AVR Logger supports the following log levels. Setting the Logger to a specific level forces it to ignore messages below that level.
 Code is optimized away and takes no resources. For "Release" version of the software consider LOG_LEVEL_ERROR or LOG_LEVEL_INFO.
