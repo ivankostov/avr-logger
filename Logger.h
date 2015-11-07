@@ -34,7 +34,6 @@ THE SOFTWARE.
 // change this to be more generic
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
-#include "Wstring.h"
 #include "string.h"
 #include <avr/pgmspace.h>
 #endif
