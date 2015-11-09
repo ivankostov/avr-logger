@@ -91,3 +91,6 @@ The AVR Logger comes with a ready to use CPP implementation of a CppSink and the
 Because of the flexible design, you can use the Logger with your favorite mock library if you want to. ( For example Turtle Mock )
 For an example please have a look in the \a test folder of the project.
 
+# Installation
+
+Download the [ZIP file](https://github.com/ivankostov/avr-logger/archive/master.zip "ZIP file") and import it from your Arduino IDE. ( Sketch -> Include Library -> Add .ZIP Library ). Clean it up if you want to or have a look in the example. Or if you are using Eclipse or some other IDE, include SerialLogger.h and Logger.h in your project. 
