@@ -65,7 +65,7 @@ Or you can rely on the good old seral console and log the messages there. Implem
 
 All you need to do is to implement a class with a write function
 
-	``` cpp
+``` cpp
 	struct CppLogSink
 	{
 		void write(unsigned char u)
@@ -78,11 +78,11 @@ All you need to do is to implement a class with a write function
 
 	extern CppLogSink Sink;
 	extern CppLog Log;
-	```
+```
  
 And then in your code use it like this
 
-	``` cpp
+``` cpp
 	CppLogSink Sink;
 	CppLog Log;
 
@@ -96,7 +96,8 @@ And then in your code use it like this
 	{
 		Log.Info(F("Hello '%F'"),F("Ivan"));
 	}
-	```
+```
+
 # Testing
 
 Testing the code on the microcontroller directly can be difficult and time consuming. That is why it is important to have 
