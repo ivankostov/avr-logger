@@ -2,7 +2,7 @@
 Logging library for AVR microcontrollers
 
 #include "SerialLogger.h"
-
+``` cpp
 void setup()
 {
   Serial.begin(9600);
@@ -17,7 +17,7 @@ void loop()
   Log.Debug(F("Or binary '%b'"),123);
   delay(5000);
 }
-
+```
 # Introduction
 
 Debugging a microcontroller can be time consuming and usually requires special hardware. That is why most of the developers prefer to use
@@ -55,8 +55,6 @@ Code is optimized away and takes no resources. For "Release" version of the soft
 - LOG_LEVEL_DEBUG - error, info, and debug messages are printed.
 - LOG_LEVEL_VERBOSE - all messages are printed
 
-For more information please refer to the example.
-
 # Log Sinks
 
 Storing the printed logs from a microcontroller can be tricky. In contrast to PCs microcontrollers have a limited memory.
@@ -67,7 +65,7 @@ Or you can rely on the good old seral console and log the messages there. Implem
 
 All you need to do is to implement a class with a write function
 
-
+	``` cpp
 	struct CppLogSink
 	{
 		void write(unsigned char u)
@@ -80,10 +78,11 @@ All you need to do is to implement a class with a write function
 
 	extern CppLogSink Sink;
 	extern CppLog Log;
+	```
  
 And then in your code use it like this
 
-
+	``` cpp
 	CppLogSink Sink;
 	CppLog Log;
 
@@ -97,7 +96,7 @@ And then in your code use it like this
 	{
 		Log.Info(F("Hello '%F'"),F("Ivan"));
 	}
-
+	```
 # Testing
 
 Testing the code on the microcontroller directly can be difficult and time consuming. That is why it is important to have 
