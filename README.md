@@ -1,8 +1,9 @@
 # avr-logger
 Logging library for AVR microcontrollers
 
-#include "SerialLogger.h"
 ``` cpp
+#include "SerialLogger.h"
+
 void setup()
 {
   Serial.begin(9600);
