@@ -173,7 +173,7 @@ private:
 				}
 				if (next == 's')
 				{
-					register char *s = (char *)va_arg( args, int );
+					register char *s = (char *)va_arg( args, char* );
 					printString(s);
 					continue;
 				}
